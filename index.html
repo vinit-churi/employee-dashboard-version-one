@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,700&family=Oswald:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script src="./index.js" defer></script>
+    <title>Road safe | Employee dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <img
+          class="logo-image"
+          src="./road-one_wcruoq-removebg-preview.png"
+          alt=""
+        />
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-home"></i></span>
+              <span class="title">Overview</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-users"></i></span>
+              <span class="title">User Complaints</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-map-marked-alt"></i></span>
+              <span class="title">Survey heatmap</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><i class="fas fa-snowplow"></i></i
+              ></span>
+              <span class="title">Contractors</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-tools"></i></span>
+              <span class="title">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-info-circle"></i></span>
+              <span class="title">Help</span>
+            </a>
+          </li>
+          <!-- <li>
+            <a href="">
+              <span class="icon"><i class="fas fa-unlock"></i></span>
+              <span class="title">password</span>
+            </a>
+          </li> -->
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+              <span class="title">sign out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <div class="topbar">
+        <div class="toogle" onclick="toogleMenu()"></div>
+        <div class="user">
+          <img src="./VVMC-removebg-preview.png" alt="" />
+        </div>
+        <div class="search">
+          <label>
+            <input type="text" placeholder="search here" />
+          </label>
+        </div>
+      </div>
+      <div id="map"></div>
+    </div>
+  </body>
+</html>
