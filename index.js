@@ -19,7 +19,7 @@ const map = new mapboxgl.Map({
   style: "mapbox://styles/mapbox/streets-v11",
 });
 
-map.addControl(new mapboxgl.NavigationControl());
+map.addControl(new mapboxgl.NavigationControl(), "top-left");
 
 // filters for classifying earthquakes into five categories based on magnitude
 const mag1 = ["<", ["get", "mag"], 2];

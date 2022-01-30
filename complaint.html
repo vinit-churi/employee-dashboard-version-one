@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,700&family=Oswald:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"
+      integrity="sha256-Y26AMvaIfrZ1EQU49pf6H4QzVTrOI8m9wQYKkftBt4s="
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="./index.js" defer></script>
+    <script src="./chart.js" defer></script>
+
+    <link rel="stylesheet" href="main.css" />
+    <!-- <link rel="stylesheet" href="chart.css" /> -->
+    <link rel="stylesheet" href="complaint.css" />
+    <title>Analyse</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <img
+          class="logo-image"
+          src="./road-one_wcruoq-removebg-preview.png"
+          alt=""
+        />
+        <ul>
+          <li>
+            <a href="./index.html">
+              <span class="icon"><i class="fas fa-home"></i></span>
+              <span class="title">Overview</span>
+            </a>
+          </li>
+          <li>
+            <a href="./chart.html">
+              <span class="icon"><i class="fas fa-poll"></i></span>
+              <span class="title">Analysis</span>
+            </a>
+          </li>
+          <li></li>
+          <li>
+            <a href="complaint.html">
+              <span class="icon"><i class="fas fa-users"></i></span>
+              <span class="title">User Complaints</span>
+            </a>
+          </li>
+          <li>
+            <a href="survey.html">
+              <span class="icon"><i class="fas fa-map-marked-alt"></i></span>
+              <span class="title">Survey heatmap</span>
+            </a>
+          </li>
+          <li>
+            <a href="report.html">
+              <span class="icon"><i class="fas fa-unlock"></i></span>
+              <span class="title">Reports</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-tools"></i></span>
+              <span class="title">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-info-circle"></i></span>
+              <span class="title">Help</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+              <span class="title">sign out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <!-- <div class="circle"></div> -->
+
+      <div class="topbar">
+        <div class="toogle" onclick="toogleMenu()"></div>
+        <div class="user">
+          <img src="./VVMC-removebg-preview.png" alt="" />
+        </div>
+        <div class="search">
+          <label>
+            <input type="text" placeholder="search here" />
+          </label>
+        </div>
+      </div>
+      <div id="complaint">
+        <div class="card-wrapper">
+          <div class="left-cards">
+            <div class="one-card">
+              <h3>Total no. of complaints</h3>
+              <h1>369</h1>
+            </div>
+            <div class="two-card">
+              <h3>Total no. of road blocks</h3>
+              <h1>36</h1>
+            </div>
+          </div>
+          <div class="right-cards">
+            <div class="one-card">
+              <h3>last updated:</h3>
+              <h1>5 minutes ago..</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="complaint-table">
+        <div class="details">
+          <div class="recentOrders">
+            <div class="cardHeader">
+              <h2>Recent complaints</h2>
+              <a href="#" class="view-all">View All</a>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <td>Complaint title</td>
+                  <td>Complaint id</td>
+                  <td>last updated date</td>
+                  <td>no. of complaints</td>
+                  <td>status</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>-----</td>
+                  <td>----</td>
+                  <td>-----</td>
+                  <td>-----</td>
+                  <td><span class="status">resolved</span></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>-----</td>
+                  <td>----</td>
+                  <td>-----</td>
+                  <td>-----</td>
+                  <td><span class="status">resolved</span></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>-----</td>
+                  <td>----</td>
+                  <td>-----</td>
+                  <td>-----</td>
+                  <td><span class="status">resolved</span></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>-----</td>
+                  <td>----</td>
+                  <td>-----</td>
+                  <td>-----</td>
+                  <td><span class="status">resolved</span></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>-----</td>
+                  <td>----</td>
+                  <td>-----</td>
+                  <td>-----</td>
+                  <td><span class="status">resolved</span></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>-----</td>
+                  <td>----</td>
+                  <td>-----</td>
+                  <td>-----</td>
+                  <td><span class="status">resolved</span></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>-----</td>
+                  <td>----</td>
+                  <td>-----</td>
+                  <td>-----</td>
+                  <td><span class="status">resolved</span></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>-----</td>
+                  <td>----</td>
+                  <td>-----</td>
+                  <td>-----</td>
+                  <td><span class="status">resolved</span></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>-----</td>
+                  <td>----</td>
+                  <td>-----</td>
+                  <td>-----</td>
+                  <td><span class="status">resolved</span></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>-----</td>
+                  <td>----</td>
+                  <td>-----</td>
+                  <td>-----</td>
+                  <td><span class="status">resolved</span></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>-----</td>
+                  <td>----</td>
+                  <td>-----</td>
+                  <td>-----</td>
+                  <td><span class="status">resolved</span></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>-----</td>
+                  <td>----</td>
+                  <td>-----</td>
+                  <td>-----</td>
+                  <td><span class="status">resolved</span></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>-----</td>
+                  <td>----</td>
+                  <td>-----</td>
+                  <td>-----</td>
+                  <td><span class="status">resolved</span></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>-----</td>
+                  <td>----</td>
+                  <td>-----</td>
+                  <td>-----</td>
+                  <td><span class="status">resolved</span></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>-----</td>
+                  <td>----</td>
+                  <td>-----</td>
+                  <td>-----</td>
+                  <td><span class="status">resolved</span></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>-----</td>
+                  <td>----</td>
+                  <td>-----</td>
+                  <td>-----</td>
+                  <td><span class="status">resolved</span></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>-----</td>
+                  <td>----</td>
+                  <td>-----</td>
+                  <td>-----</td>
+                  <td><span class="status">resolved</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

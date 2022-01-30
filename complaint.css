@@ -1,0 +1,140 @@
+.one-card,
+.two-card {
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-sizing: border-box;
+  /* width: fit-content; */
+  width: 250px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.one-card:hover,
+.two-card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card-wrapper {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 100px;
+  width: 95%;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  margin: 100px auto;
+}
+
+.left-cards {
+  display: flex;
+  gap: 30px;
+}
+
+.left-cards > .one-card,
+.left-cards > .two-card {
+  /* padding: 40px; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  gap: 10px;
+}
+
+.right-cards {
+  width: 100%;
+  /* width: 500px !important; */
+  /* justify-content: stretch; */
+}
+
+.right-cards > .one-card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+}
+
+.right-cards > .one-card > h3 {
+  width: 30%;
+  padding: 30px;
+  border-right: 2px solid gray;
+}
+
+.right-cards > .one-card > h1 {
+  width: 100%;
+  /* text-align: left; */
+  padding: 30px;
+}
+
+.details {
+  position: relative;
+  padding-top: 20px;
+}
+
+.details .recentOrders {
+  position: relative;
+  display: grid;
+  min-height: 530px;
+  background-color: #fff;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cardHeader h2 {
+  font-weight: 700;
+}
+
+.view-all {
+  position: relative;
+  padding: 5px 10px;
+  background: #03a9f4;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.details table thead td {
+  font-weight: 600;
+}
+
+table {
+  border-collapse: collapse;
+}
+.details .recentOrders table thead tr {
+  height: 30px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+.details .recentOrders table tr:hover {
+  background-color: #03a9f4;
+  color: #fff;
+}
+
+tr {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+tbody tr:last-child {
+  border: none;
+}
+
+td {
+  padding: 9px 5px;
+}
+.status {
+  background-color: rgb(89, 146, 84);
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  padding: 8px;
+  clip-path: polygon(0% 0%, 88% 0, 100% 50%, 88% 100%, 0% 100%);
+}
+
+.complaint-table {
+  width: 95%;
+  margin: 20px auto;
+}
